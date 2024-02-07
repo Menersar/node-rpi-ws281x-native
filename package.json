@@ -24,7 +24,7 @@
   "bugs": "https://github.com/beyondscreen/node-rpi-ws281x-native/issues",
   "license": "MIT",
   "scripts": {
-    "install": "node-gyp rebuild -j4 --release",
+    "build": "node-gyp rebuild -j4 --release",
     "upload": "if [ ! -z ${UPLOAD_DEST:-''} ] ; then rsync -azv --delete --exclude={.*,node_modules,build} . ${UPLOAD_DEST} ; fi"
   },
   "dependencies": {
