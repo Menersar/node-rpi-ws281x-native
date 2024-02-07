@@ -14,12 +14,12 @@
         {
           'target_name': 'rpi_ws281x-version',
           'type': 'none',
-          'sources': ['./node_modules/src/rpi_ws281x/version'],
+          'sources': ['./src/rpi_ws281x/version'],
           'actions': [{
             'action_name': 'make_version_h',
-            'variables': {'version_file': './node_modules/src/rpi_ws281x/version'},
+            'variables': {'version_file': './src/rpi_ws281x/version'},
             'inputs': ['./tools/make-version-h.js', '<@(version_file)'],
-            'outputs': ['./node_modules/src/rpi_ws281x/version.h'],
+            'outputs': ['./src/rpi_ws281x/version.h'],
             'action': ['node', './tools/make-version-h.js', '<@(version_file)', '<@(_outputs)'],
           }]
         },
@@ -29,7 +29,7 @@
           'type': 'static_library',
           'dependencies': ['rpi_ws281x-version'],
           'sources': [
-            "<!@(node -p \"require('fs').readdirSync('./node_modules/src/rpi_ws281x').filter(f => (f.match(/\.c$/) && !f.match('main.c'))).map(f => 'src/rpi_ws281x/' + f).join(' ')\")"
+            "<!@(node -p \"require('fs').readdirSync('./src/rpi_ws281x').filter(f => (f.match(/\.c$/) && !f.match('main.c'))).map(f => 'src/rpi_ws281x/' + f).join(' ')\")"
           ],
           'cflags!': ['-Wextra']
         }

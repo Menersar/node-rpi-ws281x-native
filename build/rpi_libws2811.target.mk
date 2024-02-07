@@ -139,9 +139,10 @@ LIBS :=
 $(obj).target/rpi_libws2811.a: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(obj).target/rpi_libws2811.a: LIBS := $(LIBS)
 $(obj).target/rpi_libws2811.a: TOOLSET := $(TOOLSET)
-$(obj).target/rpi_libws2811.a: $(OBJS)
-	$(call create_archive,$@,$^)
+$(obj).target/rpi_libws2811.a: $(OBJS) FORCE_DO_CMD
+	$(call do_cmd,alink)
 
+all_deps += $(obj).target/rpi_libws2811.a
 # Add target alias
 .PHONY: rpi_libws2811
 rpi_libws2811: $(obj).target/rpi_libws2811.a
