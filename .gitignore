@@ -4,3 +4,4 @@
 .idea
 node_modules
 # /lib/binding/rpi_ws281x.node
+.history
