@@ -81,6 +81,15 @@
     "want_separate_host_toolset": 0,
     "nodedir": "/home/menersar/.cache/node-gyp/16.0.0",
     "python": "/usr/bin/python3",
-    "standalone_static_library": 1
+    "standalone_static_library": 1,
+    "j4": "true",
+    "user_agent": "npm/7.10.0 node/v16.0.0 linux x64",
+    "userconfig": "/home/menersar/.npmrc",
+    "metrics_registry": "https://registry.npmjs.org/",
+    "prefix": "/usr/local",
+    "cache": "/home/menersar/.npm",
+    "node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "globalconfig": "/usr/local/etc/npmrc",
+    "init_module": "/home/menersar/.npm-init.js"
   }
 }

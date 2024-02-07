@@ -31,7 +31,7 @@ Release/obj.target/rpi_ws281x/src/rpi-ws281x.o: ../src/rpi-ws281x.cc \
  ../node_modules/nan/nan_weak.h ../node_modules/nan/nan_object_wrap.h \
  ../node_modules/nan/nan_private.h \
  ../node_modules/nan/nan_typedarray_contents.h \
- ../node_modules/nan/nan_json.h \
+ ../node_modules/nan/nan_json.h ../node_modules/nan/nan_scriptorigin.h \
  /home/menersar/.cache/node-gyp/16.0.0/include/node/v8.h \
  ../src/rpi_ws281x/ws2811.h ../src/rpi_ws281x/rpihw.h \
  ../src/rpi_ws281x/pwm.h
@@ -69,6 +69,7 @@ Release/obj.target/rpi_ws281x/src/rpi-ws281x.o: ../src/rpi-ws281x.cc \
 ../node_modules/nan/nan_private.h:
 ../node_modules/nan/nan_typedarray_contents.h:
 ../node_modules/nan/nan_json.h:
+../node_modules/nan/nan_scriptorigin.h:
 /home/menersar/.cache/node-gyp/16.0.0/include/node/v8.h:
 ../src/rpi_ws281x/ws2811.h:
 ../src/rpi_ws281x/rpihw.h:
